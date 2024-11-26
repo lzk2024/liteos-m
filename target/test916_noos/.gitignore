@@ -1,0 +1,10 @@
+listing/
+output/
+obj/
+RTE/
+JLinkLog.txt
+*.uvgui.*
+*.uvguix.*
+*.uvoptx
+*.dep
+*.scvd

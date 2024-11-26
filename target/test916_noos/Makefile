@@ -1,8 +1,8 @@
 CMSIS_BASE=./wizard/CMSIS
 CMSIS_INC=${CMSIS_BASE}/Include
-ING_REL=../../../../ING_SDK/sdk
+ING_REL=./sdk
 LITEOS_BASE=../../
-ING_BUNDLE += ../../../../ING_SDK/sdk/bundles/noos_typical/inc
+ING_BUNDLE += ${ING_REL}/bundles/noos_typical/inc
 
 OS_INC += -I ./FreeRTOS/include
 OS_INC += -I ./FreeRTOS/portable/GCC/ARM_CM4F
@@ -19,7 +19,7 @@ OS_INC += -I $(LITEOS_BASE)lib/libsec/src/
 OS_INC += -I $(LITEOS_BASE)lib/libsec/src/include
 OS_INC += -I $(LITEOS_BASE)components/signal
 
-SYMDEFS=-Wl,--just-symbols=../../../../ING_SDK/sdk/bundles/noos_typical/ING9168xx/symdefs.g
+SYMDEFS=-Wl,--just-symbols=${ING_REL}/bundles/noos_typical/ING9168xx/symdefs.g
 
 APPNAME=ing916
 
