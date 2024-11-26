@@ -1,0 +1,26 @@
+echo|fixing {{proj_dir}}/{{proj_name}}.uvproj
+{{if secondary}}{{else}}change_xml|{{proj_dir}}/{{proj_name}}.uvproj|Targets>Target>TargetOption>TargetArmAds>ArmAdsMisc>OnChipMemories>OCR_RVCT4>StartAddress|{{app_rom_addr}}{{endif}}
+{{if secondary}}{{else}}change_xml|{{proj_dir}}/{{proj_name}}.uvproj|Targets>Target>TargetOption>TargetArmAds>ArmAdsMisc>OnChipMemories>OCR_RVCT4>Size|{{app_rom_size}}{{endif}}
+change_xml|{{proj_dir}}/{{proj_name}}.uvproj|Targets>Target>TargetOption>TargetArmAds>ArmAdsMisc>OnChipMemories>OCR_RVCT9>StartAddress|{{app_ram_addr}}
+change_xml|{{proj_dir}}/{{proj_name}}.uvproj|Targets>Target>TargetOption>TargetArmAds>ArmAdsMisc>OnChipMemories>OCR_RVCT9>Size|{{app_ram_size}}
+xml_value_replace|{{proj_dir}}/{{proj_name}}.uvproj|Targets>Target>TargetOption>TargetArmAds>Cads>VariousControls>IncludePath|{{old.sdk_release_path}}/bundles/{{bundle}}/inc;{{old.sdk_release_path}}/bundles/{{bundle}}/inc/os;{{old.sdk_release_path}}/src/BSP;{{old.sdk_release_path}}/src/FWlib;{{old.sdk_release_path}}/src/StartUP/{{family}};{{old.sdk_release_path}}/src/Tools;{{old.sdk_release_path}}/src{{if bundle eq mesh}};{{old.sdk_release_path}}/src/Mesh{{endif}}|{{sdk_release_path}}/bundles/{{bundle}}/inc;{{sdk_release_path}}/bundles/{{bundle}}/inc/os;{{sdk_release_path}}/src/BSP;{{sdk_release_path}}/src/FWlib;{{sdk_release_path}}/src/StartUP/{{family}};{{sdk_release_path}}/src/Tools;{{sdk_release_path}}/src{{if bundle eq mesh}};{{sdk_release_path}}/src/Mesh{{endif}}
+
+echo|fixing {{proj_dir}}/{{proj_name}}.uvprojx
+{{if secondary}}{{else}}change_xml|{{proj_dir}}/{{proj_name}}.uvprojx|Targets>Target>TargetOption>TargetArmAds>ArmAdsMisc>OnChipMemories>OCR_RVCT4>StartAddress|{{app_rom_addr}}{{endif}}
+{{if secondary}}{{else}}change_xml|{{proj_dir}}/{{proj_name}}.uvprojx|Targets>Target>TargetOption>TargetArmAds>ArmAdsMisc>OnChipMemories>OCR_RVCT4>Size|{{app_rom_size}}{{endif}}
+change_xml|{{proj_dir}}/{{proj_name}}.uvprojx|Targets>Target>TargetOption>TargetArmAds>ArmAdsMisc>OnChipMemories>OCR_RVCT9>StartAddress|{{app_ram_addr}}
+change_xml|{{proj_dir}}/{{proj_name}}.uvprojx|Targets>Target>TargetOption>TargetArmAds>ArmAdsMisc>OnChipMemories>OCR_RVCT9>Size|{{app_ram_size}}
+xml_value_replace|{{proj_dir}}/{{proj_name}}.uvprojx|Targets>Target>TargetOption>TargetArmAds>Cads>VariousControls>IncludePath|{{old.sdk_release_path}}/bundles/{{bundle}}/inc;{{old.sdk_release_path}}/bundles/{{bundle}}/inc/os;{{old.sdk_release_path}}/src/BSP;{{old.sdk_release_path}}/src/FWlib;{{old.sdk_release_path}}/src/StartUP/{{family}};{{old.sdk_release_path}}/src/Tools;{{old.sdk_release_path}}/src{{if bundle eq mesh}};{{old.sdk_release_path}}/src/Mesh{{endif}}|{{sdk_release_path}}/bundles/{{bundle}}/inc;{{sdk_release_path}}/bundles/{{bundle}}/inc/os;{{sdk_release_path}}/src/BSP;{{sdk_release_path}}/src/FWlib;{{sdk_release_path}}/src/StartUP/{{family}};{{sdk_release_path}}/src/Tools;{{sdk_release_path}}/src{{if bundle eq mesh}};{{sdk_release_path}}/src/Mesh{{endif}}
+
+optional|{{proj_dir}}/init.ini
+
+echo|update {{proj_dir}}/init.ini
+re_replace_line|{{proj_dir}}/init.ini|msp *=.*|msp = *(unsigned int *)( 0x{{bundle_meta.rom.base:%.8X}} )
+re_replace_line|{{proj_dir}}/init.ini|pc *=.*|pc  = *(unsigned int *)( 0x{{bundle_meta.rom.base:%.8X}} + 4 )
+
+echo|fixing {{proj_dir}}/{{proj_name}}.sct
+
+optional|{{proj_dir}}/{{proj_name}}.sct
+
+re_replace_line|{{proj_dir}}/{{proj_name}}.sct| *RW_IRAM1.*|RW_IRAM1 0x{{app_ram_addr:%.8X}} 0x{{app_ram_size:%.8X}} {  ; RW data
+

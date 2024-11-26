@@ -1,0 +1,17 @@
+echo|fixing {{proj_dir}}/Makefile
+re_replace_line|{{proj_dir}}/Makefile|ING_REL=.*|ING_REL={{sdk_release_path}}
+re_replace_line|{{proj_dir}}/Makefile|ING_BUNDLE=.*|ING_BUNDLE={{sdk_release_path}}/bundles/{{bundle}}/inc
+re_replace_line|{{proj_dir}}/Makefile|SYMDEFS=.*|SYMDEFS=-Wl,--just-symbols={{sdk_release_path}}/bundles/{{bundle}}/{{series}}/symdefs.g
+replace_line|{{proj_dir}}/Makefile|NIM_PATH={{old.tc_dir}}|NIM_PATH={{tc_dir}}
+
+echo|fixing {{proj_dir}}/{{proj_name}}.ld
+{{if secondary}}{{else}}re_replace_line|{{proj_dir}}/{{proj_name}}.ld|\s*FLASH\s*\(rx\).*|  FLASH (rx) : ORIGIN = {{app_rom_addr}}, LENGTH = {{app_rom_size}}{{endif}}
+re_replace_line|{{proj_dir}}/{{proj_name}}.ld|\s*RAM\s*\(rwx\).*|  RAM (rwx) : ORIGIN = {{app_ram_addr}}, LENGTH = {{app_ram_size}}
+
+echo|fixing nim.cfg
+replace_line|{{proj_dir}}/nim.cfg|--path="{{old.sdk_release_path}}/src/BSP"|--path="{{sdk_release_path}}/src/BSP"
+replace_line|{{proj_dir}}/nim.cfg|--path="{{old.sdk_release_path}}/src/FWLib"|--path="{{sdk_release_path}}/src/FWLib"
+replace_line|{{proj_dir}}/nim.cfg|--path="{{old.sdk_release_path}}/src/StartUP/{{family}}"|--path="{{sdk_release_path}}/src/StartUP/{{family}}"
+replace_line|{{proj_dir}}/nim.cfg|--path="{{old.sdk_release_path}}/src/Tools"|--path="{{sdk_release_path}}/src/Tools"
+replace_line|{{proj_dir}}/nim.cfg|--path="{{old.sdk_release_path}}/bundles/typical/inc"|--path="{{sdk_release_path}}/bundles/typical/inc"
+replace_line|{{proj_dir}}/nim.cfg|--path="{{old.sdk_release_path}}/bundles/typical/inc/os"|--path="{{sdk_release_path}}/bundles/typical/inc/os"

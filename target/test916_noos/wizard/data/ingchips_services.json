@@ -1,0 +1,307 @@
+{
+ "3345c2f0-6f36-45c5-8541-92f56728d5f3": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.fota.version", 
+    "name": "FOTA Version",
+    "properties": ["read"]
+   }, 
+   {
+    "type": "com.ingchips.characteristic.fota.control", 
+    "name": "FOTA Control",
+    "properties": ["read", "WriteWithoutResponse", "dynamic"]
+   },
+   {
+    "type": "com.ingchips.characteristic.fota.data", 
+    "name": "FOTA Data",
+    "properties": ["WriteWithoutResponse", "dynamic"]
+   },
+   {
+    "type": "com.ingchips.characteristic.fota.pub_key", 
+    "name": "FOTA Public Key",
+    "properties": ["read", "WriteWithoutResponse", "dynamic"]
+   }
+  ], 
+  "type": "com.ingchips.service.fota", 
+  "name": "INGChips FOTA Service", 
+  "uuid": "3345c2f0-6f36-45c5-8541-92f56728d5f3"
+ },
+ "1145c2f0-6f36-45c5-8541-92f56728d5f3": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.etag.control", 
+    "name": "eTag Control",
+    "properties": ["read", "WriteWithoutResponse", "dynamic"]
+   },
+   {
+    "type": "com.ingchips.characteristic.etag.data", 
+    "name": "eTag Data",
+    "properties": ["read", "WriteWithoutResponse", "dynamic"]
+   },
+   {
+    "type": "com.ingchips.characteristic.etag.resolution", 
+    "name": "eTag Resolution",
+    "properties": ["read"]
+   }
+  ], 
+  "type": "com.ingchips.service.etag", 
+  "name": "INGChips eTag Service", 
+  "uuid": "1145c2f0-6f36-45c5-8541-92f56728d5f3"
+ },
+ "6a33a526-e004-4793-a084-8a1dc49b84fd": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.rgb.control", 
+    "name": "RGB Lighting Control",
+    "properties": ["read", "WriteWithoutResponse", "dynamic"]
+   }
+  ], 
+  "type": "com.ingchips.service.rgb", 
+  "name": "INGChips RGB Lighting Service", 
+  "uuid": "6a33a526-e004-4793-a084-8a1dc49b84fd"
+ },
+ "43f4b114-ca67-48e8-a46f-9a8ffeb7146a": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.generic.input", 
+    "name": "Generic Input",
+    "properties": ["read", "WriteWithoutResponse", "dynamic"]
+   },
+   {
+    "type": "com.ingchips.characteristic.generic.output", 
+    "name": "Generic Output",
+    "properties": ["notify"]
+   }
+  ], 
+  "type": "com.ingchips.service.console", 
+  "name": "INGChips Console Service", 
+  "uuid": "43f4b114-ca67-48e8-a46f-9a8ffeb7146a"
+ },
+ "2445314a-a1d4-4874-b4d1-fdfb6f501485": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.generic.input", 
+    "name": "Generic Input",
+    "properties": ["read", "WriteWithoutResponse", "dynamic"]
+   },
+   {
+    "type": "com.ingchips.characteristic.generic.output", 
+    "name": "Generic Output",
+    "properties": ["notify"]
+   }
+  ], 
+  "type": "com.ingchips.service.throughput", 
+  "name": "INGChips Throughput Service", 
+  "uuid": "2445314a-a1d4-4874-b4d1-fdfb6f501485"
+ },
+ "00000001-494e-4743-4849-505355554944": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.generic.input", 
+    "name": "Voice Control",
+    "properties": ["read", "WriteWithoutResponse", "dynamic"]
+   },
+   {
+    "type": "com.ingchips.characteristic.generic.output", 
+    "name": "Voice Output",
+    "properties": ["notify"]
+   },
+   {
+    "type": "com.ingchips.characteristic.generic.information", 
+    "name": "Voice Information",
+    "properties": ["read"]
+   }
+  ], 
+  "type": "com.ingchips.service.voice.output", 
+  "name": "INGChips Voice Output Service", 
+  "uuid": "00000001-494e-4743-4849-505355554944"
+ },
+ "00000002-494e-4743-4849-505355554944": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.generic.input", 
+    "name": "Key Input",
+    "properties": ["WriteWithoutResponse", "dynamic"]
+   }
+  ], 
+  "type": "com.ingchips.service.piano", 
+  "name": "INGChips Piano Service", 
+  "uuid": "00000002-494e-4743-4849-505355554944"
+ },
+ "00000003-494e-4743-4849-505355554944": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.generic.output", 
+    "name": "IQ Output",
+    "properties": ["notify"]
+   },
+   {
+    "type": "com.ingchips.characteristic.generic.information", 
+    "name": "Configuration",
+    "properties": ["read"]
+   }
+  ], 
+  "type": "com.ingchips.service.direction.finding", 
+  "name": "INGChips Direction Finding Service", 
+  "uuid": "00000003-494e-4743-4849-505355554944"
+ },
+ "00000004-494e-4743-4849-505355554944": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.generic.input",
+    "name": "Smart Home Device Control",
+    "properties": ["WriteWithoutResponse", "dynamic"]
+   },
+   {
+    "type": "com.ingchips.characteristic.generic.output",
+    "name": "Smart Home Device Status",
+    "properties": ["notify"]
+   }
+  ],
+  "type": "com.ingchips.service.smart.home.hub",
+  "name": "INGChips Smart Home Hub Service",
+  "uuid": "00000004-494e-4743-4849-505355554944"
+ },
+ "00000005-494e-4743-4849-505355554944": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.generic.output",
+    "name": "Pulse Status Report",
+    "properties": ["notify"]
+   }
+  ],
+  "type": "com.ingchips.service.pulse_forwarding",
+  "name": "INGChips Pulse Forwarding Service",
+  "uuid": "00000005-494e-4743-4849-505355554944"
+ },
+ "00000006-494e-4743-4849-505355554944": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.generic.output",
+    "name": "Trace Data",
+    "properties": ["notify"]
+   }
+  ],
+  "type": "com.ingchips.service.trace",
+  "name": "INGChips Trace Service",
+  "uuid": "00000006-494e-4743-4849-505355554944"
+ },
+ "00000007-494e-4743-4849-505355554944": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.generic.input", 
+    "name": "Drone Command",
+    "properties": ["WriteWithoutResponse", "dynamic"]
+   },
+   {
+    "type": "com.ingchips.characteristic.generic.output", 
+    "name": "Drone Status",
+    "properties": ["notify"]
+   }
+  ], 
+  "type": "com.ingchips.service.toy_drone", 
+  "name": "INGChips Toy Drone Service", 
+  "uuid": "00000007-494e-4743-4849-505355554944"
+ },
+ "00000008-494e-4743-4849-505355554944": {
+  "characteristics": [
+   {
+    "type": "com.ingchips.characteristic.generic.input", 
+    "name": "Audio Input",
+    "properties": ["WriteWithoutResponse", "dynamic"]
+   },
+   {
+    "type": "com.ingchips.characteristic.generic.information", 
+    "name": "Display",
+    "properties": ["WriteWithoutResponse", "dynamic"]
+   }
+  ], 
+  "type": "com.ingchips.service.music_player", 
+  "name": "INGChips Music Player Service", 
+  "uuid": "00000008-494e-4743-4849-505355554944"
+ }, 
+ "0000fd44-0000-1000-8000-00805f9b34fb": {
+  "uuid": "0000fd44-0000-1000-8000-00805f9b34fb",
+  "type": "apple.find.my.network.service",
+  "name": "Find My network service",
+  "characteristics": [
+   {
+    "properties": [
+     "write","indicate"],
+    "type": "apple.find.my.network.service.pairing.control.point",
+    "name": "Pairing Control Point"
+   },{
+    "properties": [
+     "write","indicate","authorizationRequired"],
+    "type": "apple.find.my.network.service.configuration.control.point",
+    "name": "Configuration Control Point"
+   },{
+    "properties": [
+     "write","indicate"],
+    "type": "apple.find.my.network.service.non.owner.control.point",
+    "name": "Non Owner Control Point"
+   },{
+    "properties": [
+     "write","indicate"],
+    "type": "apple.find.my.network.service.paired.owner.information.control.point",
+    "name": "Paired owner Information Control Point"
+   },{
+    "properties": [
+     "write","indicate"],
+    "type": "apple.find.my.network.service.debug.control.point",
+    "name": "Debug Control Point"
+   }]
+ },
+ "87290102-3c51-43b1-a1a9-11b9dc38478b": {
+  "uuid": "87290102-3c51-43b1-a1a9-11b9dc38478b",
+  "type": "apple.accessory.information.service",
+  "name": "Accessory information service",
+  "characteristics": [
+   {
+    "properties": [
+     "read","dynamic"],
+    "type": "apple.accessory.information.service.product.data",
+    "name": "ProductData"
+   },{
+    "properties": [
+     "read","dynamic"],
+    "type": "apple.accessory.information.service.manufacturer.name",
+    "name": "ManufacturerName"
+   },{
+    "properties": [
+     "read","dynamic"],
+    "type": "apple.accessory.information.service.model.name",
+    "name": "ModelName"
+   },{
+    "properties": [
+     "read","dynamic"],
+    "type": "apple.accessory.information.service.accessory.category",
+    "name": "AccessoryCategory"
+   },{
+    "properties": [
+     "read","dynamic"],
+    "type": "apple.accessory.information.service.accessory.capabilities",
+    "name": "AccessoryCapabilities"
+   },{
+    "properties": [
+     "read","dynamic"],
+    "type": "apple.accessory.information.service.firmware.version",
+    "name": "FirmwareVersion"
+   },{
+    "properties": [
+     "read","dynamic"],
+    "type": "apple.accessory.information.service.find.my.version",
+    "name": "FindMyVersion"
+   },{
+    "properties": [
+     "read","dynamic"],
+    "type": "apple.accessory.information.service.battery.type",
+    "name": "BatteryType"
+   },{
+    "properties": [
+     "read","dynamic"],
+    "type": "apple.accessory.information.service.battery.level",
+    "name": "BatteryLevel"
+   }]
+ }
+}

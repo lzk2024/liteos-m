@@ -1,0 +1,8 @@
+echo|fixing {{proj_dir}}/Makefile
+re_replace_line|{{proj_dir}}/Makefile|ING_REL=.*|ING_REL={{sdk_release_path}}
+re_replace_line|{{proj_dir}}/Makefile|ING_BUNDLE=.*|ING_BUNDLE={{sdk_release_path}}/bundles/{{bundle}}/inc
+re_replace_line|{{proj_dir}}/Makefile|SYMDEFS=.*|SYMDEFS=-Wl,--just-symbols={{sdk_release_path}}/bundles/{{bundle}}/{{series}}/symdefs.g
+
+echo|fixing {{proj_dir}}/{{proj_name}}.ld
+{{if secondary}}{{else}}re_replace_line|{{proj_dir}}/{{proj_name}}.ld|\s*FLASH\s*\(rx\).*|  FLASH (rx) : ORIGIN = {{app_rom_addr}}, LENGTH = {{app_rom_size}}{{endif}}
+re_replace_line|{{proj_dir}}/{{proj_name}}.ld|\s*RAM\s*\(rwx\).*|  RAM (rwx) : ORIGIN = {{app_ram_addr}}, LENGTH = {{app_ram_size}}

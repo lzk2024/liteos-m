@@ -1,0 +1,37 @@
+body
+{
+    font-family:Arial, Helvetica, sans-serif;
+    padding:15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+    vertical-align: center;
+}
+
+td, th {
+    padding:5px;
+}
+
+
+th {
+    font-size:1.1em;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:4px;
+	background-color:#57C942;
+	color:#ffffff;
+}
+
+#warning {
+    background-color:#f05050;
+    color:#ffffff;
+    font-style: italic;
+	text-align: right;
+	margin-top: 0.5em;
+}
+

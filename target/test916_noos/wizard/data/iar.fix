@@ -1,0 +1,13 @@
+echo|fixing {{proj_dir}}/generic_cortex.icf
+{{if secondary}}{{else}}re_replace|{{proj_dir}}/generic_cortex.icf|(.*)(__ICFEDIT_intvec_start__)\s*=\s*([^;]+)|$1 $2 = {{app_rom_addr}}{{endif}}
+{{if secondary}}{{else}}re_replace|{{proj_dir}}/generic_cortex.icf|(.*)(__ICFEDIT_region_IROM1_start__)\s*=\s*([^;]+)|$1 $2 = {{app_rom_addr}}{{endif}}
+re_replace|{{proj_dir}}/generic_cortex.icf|(.*)(__ICFEDIT_region_IRAM1_start__)\s*=\s*([^;]+)|$1 $2 = {{app_ram_addr}}
+
+echo|fixing {{proj_dir}}/{{proj_name}}.ewp
+change_name_values|{{proj_dir}}/{{proj_name}}.ewp|option|name|CCIncludePath2|state|{{old.sdk_release_path}}/bundles/{{bundle}}/inc;{{old.sdk_release_path}}/bundles/{{bundle}}/inc/os;{{old.sdk_release_path}}/src/BSP;{{old.sdk_release_path}}/src/FWlib;{{old.sdk_release_path}}/src/StartUP/{{family}};{{old.sdk_release_path}}/src/Tools;{{old.sdk_release_path}}/src{{if bundle eq mesh}};{{old.sdk_release_path}}/src/Mesh{{endif}}|{{sdk_release_path}}/bundles/{{bundle}}/inc;{{sdk_release_path}}/bundles/{{bundle}}/inc/os;{{sdk_release_path}}/src/BSP;{{sdk_release_path}}/src/FWlib;{{sdk_release_path}}/src/StartUP/{{family}};{{sdk_release_path}}/src/Tools;{{sdk_release_path}}/src{{if bundle eq mesh}};{{sdk_release_path}}/src/Mesh{{endif}}
+
+optional|{{proj_dir}}/init.mac
+
+echo|update {{proj_dir}}/init.mac
+re_replace_line|{{proj_dir}}/init.mac|#MSP *=.*|#MSP = *(unsigned int *)( {{bundle_meta.rom.base}} );
+re_replace_line|{{proj_dir}}/init.mac|#PC *=.*|#PC = *(unsigned int *)({{bundle_meta.rom.base}} + 4);

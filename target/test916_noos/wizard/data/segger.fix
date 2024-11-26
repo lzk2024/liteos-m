@@ -1,0 +1,6 @@
+echo|fixing {{proj_dir}}/{{proj_name}}.ld
+{{if secondary}}{{else}}re_replace_line|{{proj_dir}}/{{proj_name}}.ld|\s*FLASH\s*\(rx\).*|  FLASH (rx) : ORIGIN = {{app_rom_addr}}, LENGTH = {{app_rom_size}}{{endif}}
+re_replace_line|{{proj_dir}}/{{proj_name}}.ld|\s*RAM\s*\(rwx\).*|  RAM (rwx) : ORIGIN = {{app_ram_addr}}, LENGTH = {{app_ram_size}}
+
+echo|fixing {{proj_dir}}/{{proj_name}}.emProject
+xml_attr_replace|{{proj_dir}}/{{proj_name}}.emProject|project>configuration>c_user_include_directories|{{old.sdk_release_path}}/bundles/{{bundle}}/inc;{{old.sdk_release_path}}/bundles/{{bundle}}/inc/os;{{old.sdk_release_path}}/src/BSP;{{old.sdk_release_path}}/src/FWlib;{{old.sdk_release_path}}/src/StartUP/{{family}};{{old.sdk_release_path}}/src/Tools;{{old.sdk_release_path}}/src{{if bundle eq mesh}};{{old.sdk_release_path}}/src/Mesh{{endif}};{{cmsis}}/Include|{{sdk_release_path}}/bundles/{{bundle}}/inc;{{sdk_release_path}}/bundles/{{bundle}}/inc/os;{{sdk_release_path}}/src/BSP;{{sdk_release_path}}/src/FWlib;{{sdk_release_path}}/src/StartUP/{{family}};{{sdk_release_path}}/src/Tools;{{sdk_release_path}}/src{{if bundle eq mesh}};{{sdk_release_path}}/src/Mesh{{endif}};{{cmsis}}/Include

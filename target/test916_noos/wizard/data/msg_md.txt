@@ -1,0 +1,4 @@
+Please configure your Markdown viewer:
+
+1. Install Markdown viewer extension to your browser (Chrome/Edge/..);
+2. Tell Wizard the exe file of your browser (Options -> Common)

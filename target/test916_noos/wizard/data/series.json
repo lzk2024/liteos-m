@@ -1,0 +1,44 @@
+{
+    "ING9188xx":{
+        "family": "ing918",
+        "flash_size": 524288,
+        "flash_base": 16384,
+        "ram_size": 131072,        
+        "2M": true,
+        "LR": true, 
+        "ExtAdv": true,
+        "CTE": true, 
+        "Mesh": true,
+        "Ext": true,
+        "desc": "Full feature 5.1",
+        "usb": false
+    }
+    ,
+    "ING9187xx":{
+        "family": "ing918",
+        "flash_size": 524288,
+        "flash_base": 16384,
+        "ram_size": 131072,
+        "2M": true,
+        "LR": true, 
+        "ExtAdv": true,
+        "Mesh": true,
+        "desc": "Full feature 5.0",
+        "usb": false
+    }
+    ,
+    "ING9168xx":{
+        "family": "ing916",
+        "flash_size": 524288,
+        "flash_base": 33554432,
+        "ram_size": 65536,
+        "2M": true,
+        "LR": true, 
+        "ExtAdv": true,
+        "CTE": true, 
+        "Mesh": true,
+        "Ext": true,
+        "desc": "Full feature 5.3",
+        "usb": true
+    }
+}

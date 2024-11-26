@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iarUserArgVars>
+    <group name="ING_SDK" active="true">
+        <variable>
+            <name>ING_SDK_ROOT</name>
+            <value>{{if is_sdk_path_rel}}$PROJ_DIR$/{{endif}}{{sdk_release_path}}</value>
+        </variable>
+    </group>
+</iarUserArgVars>

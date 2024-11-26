@@ -1,0 +1,38 @@
+[
+    {
+        "caption": "Flash Downloader for ING918xx",
+        "cmd": "../downloader/icsdw918"
+    },
+    {
+        "caption": "Flash Downloader for ING916xx",
+        "cmd": "../downloader/icsdw916"
+    },
+    {
+        "caption": "BQB RF Test",
+        "cmd": "../downloader/rf_test"
+    },
+    {
+        "caption": "Patching Platform",
+        "cmd": "../downloader/piggyback"
+    },
+    {
+        "caption": "Frequency Offset Tester",
+        "cmd": "../downloader/fc_test.exe"
+    },
+    {
+        "caption": "Realtime Locating Demo (OpenGL)",
+        "cmd": "../RTL/RTLing_gl.exe"
+    },
+    {
+        "caption": "Realtime Locating Demo (DX12)",
+        "cmd": "../RTL/RTLing_dx.exe"
+    },
+    {
+        "caption": "-",
+        "cmd": ""
+    },
+    {
+        "caption": "Other Tools",
+        "cmd": "../tools/"
+    }
+]

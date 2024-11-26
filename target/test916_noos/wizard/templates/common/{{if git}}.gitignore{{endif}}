@@ -1,0 +1,22 @@
+{{if keil}}/listing
+/output
+*.dep
+*.uvgui.*
+*.uvguix.*
+{{endif}}{{if iar}}/Debug
+/Release
+*.dep
+{{endif}}{{if segger}}/Output
+*.emSession
+{{endif}}{{if rowley}}/{{proj_name}} Debug
+/{{proj_name}} Release
+*.hzs
+{{endif}}{{if gcc}}*.axf
+*.map
+{{endif}}
+{{if vcode}}/.vscode
+{{endif}}
+*.un~
+*.swp
+*.bak
+*.bin

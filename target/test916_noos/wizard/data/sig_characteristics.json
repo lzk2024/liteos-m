@@ -1,0 +1,3052 @@
+{
+ "org.bluetooth.characteristic.alert_category_id": {
+  "uuid": 10819, 
+  "value": [
+   {
+    "name": "Category ID", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.first_name": {
+  "uuid": 10890, 
+  "value": [
+   {
+    "name": "First Name", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.exact_time_256": {
+  "uuid": 10764, 
+  "value": [
+   {
+    "name": "Day Date Time", 
+    "format": "org.bluetooth.characteristic.day_date_time"
+   }, 
+   {
+    "name": "Fractions256", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.treadmill_data": {
+  "uuid": 10957, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Instantaneous Speed", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Average Speed", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Total Distance", 
+    "format": "uint24"
+   }, 
+   {
+    "name": "Inclination", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Ramp Angle Setting", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Positive Elevation Gain", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Negative Elevation Gain", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Instantaneous Pace", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Average Pace", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Total Energy", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Hour", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Minute", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Heart Rate", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Metabolic Equivalent", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Elapsed Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Remaining Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Force on Belt", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Power Output", 
+    "format": "sint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.three_zone_heart_rate_limits": {
+  "uuid": 10900, 
+  "value": [
+   {
+    "name": "Three zone Heart Rate Limits - Light (Fat burn) / Moderate (Aerobic) Limit", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Three zone Heart Rate Limits - Moderate (Aerobic) / Hard (Anaerobic) Limit", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.scan_refresh": {
+  "uuid": 10801, 
+  "value": [
+   {
+    "name": "Scan Refresh Value", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.time_with_dst": {
+  "uuid": 10769, 
+  "value": [
+   {
+    "name": "Date Time", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }, 
+   {
+    "name": "DST Offset", 
+    "format": "org.bluetooth.characteristic.dst_offset"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.time_source": {
+  "uuid": 10771, 
+  "value": [
+   {
+    "name": "Time Source", 
+    "format": "8bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.scan_interval_window": {
+  "uuid": 10831, 
+  "value": [
+   {
+    "name": "LE_Scan_Interval", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "LE_Scan_Window", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.two_zone_heart_rate_limit": {
+  "uuid": 10901, 
+  "value": [
+   {
+    "name": "Two zone Heart Rate Limit - Fat burn / Fitness Limit", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.manufacturer_name_string": {
+  "uuid": 10793, 
+  "value": [
+   {
+    "name": "Manufacturer Name", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.cgm_status": {
+  "uuid": 10921, 
+  "value": [
+   {
+    "name": "Time Offset", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "CGM Status", 
+    "format": "24bit"
+   }, 
+   {
+    "name": "E2E-CRC", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.altitude": {
+  "uuid": 10931, 
+  "value": [
+   {
+    "name": "Altitude", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.cycling_power_feature": {
+  "uuid": 10853, 
+  "value": [
+   {
+    "name": "Cycling Power Feature", 
+    "format": "32bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.plx_spot_check_measurement": {
+  "uuid": 10846, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "SpO2PR-Spot-Check - SpO2", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "SpO2PR-Spot-Check - PR", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Timestamp", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }, 
+   {
+    "name": "Measurement Status", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Device and Sensor Status", 
+    "format": "24bit"
+   }, 
+   {
+    "name": "Pulse Amplitude Index", 
+    "format": "SFLOAT"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.pollen_concentration": {
+  "uuid": 10869, 
+  "value": [
+   {
+    "name": "Pollen Concentration", 
+    "format": "uint24"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.idd_annunciation_status": {
+  "uuid": 11042, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.http_status_code": {
+  "uuid": 10936, 
+  "value": [
+   {
+    "name": "Status Code", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Data Status", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.gap.peripheral_preferred_connection_parameters": {
+  "uuid": 10756, 
+  "value": [
+   {
+    "name": "Minimum Connection Interval", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Maximum Connection Interval", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Slave Latency", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Connection Supervision Timeout Multiplier", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.body_sensor_location": {
+  "uuid": 10808, 
+  "value": [
+   {
+    "name": "Body Sensor Location", 
+    "format": "8bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.time_update_state": {
+  "uuid": 10775, 
+  "value": [
+   {
+    "name": "Current State", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Result", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.alert_level": {
+  "uuid": 10758, 
+  "value": [
+   {
+    "name": "Alert Level", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.fitness_machine_feature": {
+  "uuid": 10956, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.ln_feature": {
+  "uuid": 10858, 
+  "value": [
+   {
+    "name": "LN Feature", 
+    "format": "32bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.time_zone": {
+  "uuid": 10766, 
+  "value": [
+   {
+    "name": "Time Zone", 
+    "format": "sint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.hip_circumference": {
+  "uuid": 10895, 
+  "value": [
+   {
+    "name": "Hip Circumference", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.barometric_pressure_trend": {
+  "uuid": 10915, 
+  "value": [
+   {
+    "name": "Barometric Pressure Trend", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.mesh_provisioning_data_in": {
+  "uuid": 10971, 
+  "value": [
+   {
+    "name": "Provisioning PDU", 
+    "format": "struct"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.battery_level": {
+  "uuid": 10777, 
+  "value": [
+   {
+    "name": "Level", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.idd_command_data": {
+  "uuid": 11046, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.hid_control_point": {
+  "uuid": 10828, 
+  "value": [
+   {
+    "name": "HID Control Point Command", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.system_id": {
+  "uuid": 10787, 
+  "value": [
+   {
+    "name": "Manufacturer Identifier", 
+    "format": "uint40"
+   }, 
+   {
+    "name": "Organizationally Unique Identifier", 
+    "format": "uint24"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.pnp_id": {
+  "uuid": 10832, 
+  "value": [
+   {
+    "name": "Vendor ID Source", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Vendor ID", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Product ID", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Product Version", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.idd_record_access_control_point": {
+  "uuid": 11047, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.plx_continuous_measurement": {
+  "uuid": 10847, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "SpO2PR-Normal - SpO2", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "SpO2PR-Normal - PR", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "SpO2PR-Fast - SpO2", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "SpO2PR-Fast - PR", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "SpO2PR-Slow - SpO2", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "SpO2PR-Slow - PR", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Measurement Status", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Device and Sensor Status", 
+    "format": "24bit"
+   }, 
+   {
+    "name": "Pulse Amplitude Index", 
+    "format": "SFLOAT"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.anaerobic_threshold": {
+  "uuid": 10883, 
+  "value": [
+   {
+    "name": "Anaerobic Threshold", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.csc_measurement": {
+  "uuid": 10843, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Cumulative Wheel Revolutions", 
+    "format": "uint32"
+   }, 
+   {
+    "name": "Last Wheel Event Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Cumulative Crank Revolutions", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Last Crank Event Time", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.boot_mouse_input_report": {
+  "uuid": 10803, 
+  "value": [
+   {
+    "name": "Boot Mouse Input Report Value", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.local_time_information": {
+  "uuid": 10767, 
+  "value": [
+   {
+    "name": "Time Zone", 
+    "format": "org.bluetooth.characteristic.time_zone"
+   }, 
+   {
+    "name": "Daylight Saving Time", 
+    "format": "org.bluetooth.characteristic.dst_offset"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.reconnection_configuration_control_point": {
+  "uuid": 11039, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.ringer_setting": {
+  "uuid": 10817, 
+  "value": [
+   {
+    "name": "Ringer Setting", 
+    "format": "8bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.five_zone_heart_rate_limits": {
+  "uuid": 10891, 
+  "value": [
+   {
+    "name": "Five Zone Heart Rate Limits - Very light / Light Limit", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Five Zone Heart Rate Limits - Light / Moderate Limit", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Five Zone Heart Rate Limits - Moderate / Hard Limit", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Five Zone Heart Rate Limits - Hard / Maximum Limit", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.anaerobic_heart_rate_upper_limit": {
+  "uuid": 10882, 
+  "value": [
+   {
+    "name": "Anaerobic Heart Rate Upper Limit", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.temperature": {
+  "uuid": 10862, 
+  "value": [
+   {
+    "name": "Temperature", 
+    "format": "sint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.serial_number_string": {
+  "uuid": 10789, 
+  "value": [
+   {
+    "name": "Serial Number", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.current_time": {
+  "uuid": 10795, 
+  "value": [
+   {
+    "name": "Exact Time 256", 
+    "format": "org.bluetooth.characteristic.exact_time_256"
+   }, 
+   {
+    "name": "Adjust Reason", 
+    "format": "8bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.object_action_control_point": {
+  "uuid": 10949, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.mesh_proxy_data_out": {
+  "uuid": 10974, 
+  "value": [
+   {
+    "name": "Proxy PDU", 
+    "format": "struct"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.user_index": {
+  "uuid": 10906, 
+  "value": [
+   {
+    "name": "User Index", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.uv_index": {
+  "uuid": 10870, 
+  "value": [
+   {
+    "name": "UV Index", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.rainfall": {
+  "uuid": 10872, 
+  "value": [
+   {
+    "name": "Rainfall", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.weight_scale_feature": {
+  "uuid": 10910, 
+  "value": [
+   {
+    "name": "Weight Scale Feature", 
+    "format": "32bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.https_security": {
+  "uuid": 10939, 
+  "value": [
+   {
+    "name": "HTTPS Security", 
+    "format": "boolean"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.temperature_measurement": {
+  "uuid": 10780, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Temperature Measurement Value (Celsius)", 
+    "format": "FLOAT"
+   }, 
+   {
+    "name": "Temperature Measurement Value (Fahrenheit)", 
+    "format": "FLOAT"
+   }, 
+   {
+    "name": "Time Stamp", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }, 
+   {
+    "name": "Temperature Type", 
+    "format": "org.bluetooth.characteristic.temperature_type"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.magnetic_flux_density_3d": {
+  "uuid": 10913, 
+  "value": [
+   {
+    "name": "Magnetic Flux Density: X-Axis", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Magnetic Flux Density: Y-Axis", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Magnetic Flux Density: Z-Axis", 
+    "format": "sint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.descriptor_value_changed": {
+  "uuid": 10877, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.idd_status": {
+  "uuid": 11041, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.gap.appearance": {
+  "uuid": 10753, 
+  "value": [
+   {
+    "name": "Category", 
+    "format": "16bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.idd_history_data": {
+  "uuid": 11048, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.aerobic_threshold": {
+  "uuid": 10879, 
+  "value": [
+   {
+    "name": "Aerobic Threshold", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.cycling_power_vector": {
+  "uuid": 10852, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Crank Revolution Data - Cumulative Crank Revolutions", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Crank Revolution Data - Last Crank Event Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "First Crank Measurement Angle ", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Instantaneous Force Magnitude Array", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Instantaneous Torque Magnitude Array", 
+    "format": "sint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.location_name": {
+  "uuid": 10933, 
+  "value": [
+   {
+    "name": "Location Name", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.alert_status": {
+  "uuid": 10815, 
+  "value": [
+   {
+    "name": "Alert Status", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.uri": {
+  "uuid": 10934, 
+  "value": [
+   {
+    "name": "URI", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.cross_trainer_data": {
+  "uuid": 10958, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "24bit"
+   }, 
+   {
+    "name": "Instantaneous Speed", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Average Speed", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Total Distance", 
+    "format": "uint24"
+   }, 
+   {
+    "name": "Step Per Minute", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Average Step Rate", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Stride Count", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Positive Elevation Gain", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Negative Elevation Gain", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Inclination", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Ramp Angle Setting", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Resistance Level", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Instantaneous Power", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Average Power", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Total Energy", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Hour", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Minute", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Heart Rate", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Metabolic Equivalent", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Elapsed Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Remaining Time", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.latitude": {
+  "uuid": 10926, 
+  "value": [
+   {
+    "name": "Latitude", 
+    "format": "sint32"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.http_headers": {
+  "uuid": 10935, 
+  "value": [
+   {
+    "name": "HTTP Headers", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.resting_heart_rate": {
+  "uuid": 10898, 
+  "value": [
+   {
+    "name": "Resting Heart Rate", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.tx_power_level": {
+  "uuid": 10759, 
+  "value": [
+   {
+    "name": "Tx Power", 
+    "format": "sint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.rsc_feature": {
+  "uuid": 10836, 
+  "value": [
+   {
+    "name": "RSC Feature", 
+    "format": "16bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.object_list_filter": {
+  "uuid": 10951, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.csc_feature": {
+  "uuid": 10844, 
+  "value": [
+   {
+    "name": "CSC Feature", 
+    "format": "16bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.hardware_revision_string": {
+  "uuid": 10791, 
+  "value": [
+   {
+    "name": "Hardware Revision", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.apparent_wind_speed": {
+  "uuid": 10866, 
+  "value": [
+   {
+    "name": "Apparent Wind Speed", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.magnetic_flux_density_2d": {
+  "uuid": 10912, 
+  "value": [
+   {
+    "name": "Magnetic Flux Density: X-Axis", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Magnetic Flux Density: Y-Axis", 
+    "format": "sint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.bond_management_control_point": {
+  "uuid": 10916, 
+  "value": [
+   {
+    "name": "Op Code", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Operand", 
+    "format": "variable"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.heart_rate_max": {
+  "uuid": 10893, 
+  "value": [
+   {
+    "name": "Heart Rate Max", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.true_wind_speed": {
+  "uuid": 10864, 
+  "value": [
+   {
+    "name": "True Wind Speed", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.report_map": {
+  "uuid": 10827, 
+  "value": [
+   {
+    "name": "Report Map Value", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.true_wind_direction": {
+  "uuid": 10865, 
+  "value": [
+   {
+    "name": "True Wind Direction", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.age": {
+  "uuid": 10880, 
+  "value": [
+   {
+    "name": "Age", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.magnetic_declination": {
+  "uuid": 10796, 
+  "value": [
+   {
+    "name": "Magnetic Declination", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.measurement_interval": {
+  "uuid": 10785, 
+  "value": [
+   {
+    "name": "Measurement Interval", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.heat_index": {
+  "uuid": 10874, 
+  "value": [
+   {
+    "name": "Heat Index", 
+    "format": "sint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.supported_inclination_range": {
+  "uuid": 10965, 
+  "value": [
+   {
+    "name": "Minimum Inclination", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Maximum Inclination", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Minimum Increment", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.gust_factor": {
+  "uuid": 10868, 
+  "value": [
+   {
+    "name": "Gust Factor", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.indoor_bike_data": {
+  "uuid": 10962, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Instantaneous Speed", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Average Speed", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Instantaneous Cadence", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Average Cadence", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Total Distance", 
+    "format": "uint24"
+   }, 
+   {
+    "name": "Resistance Level", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Instantaneous Power", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Average Power", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Total Energy", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Hour", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Minute", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Heart Rate", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Metabolic Equivalent", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Elapsed Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Remaining Time", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.time_accuracy": {
+  "uuid": 10770, 
+  "value": [
+   {
+    "name": "Accuracy", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.anaerobic_heart_rate_lower_limit": {
+  "uuid": 10881, 
+  "value": [
+   {
+    "name": "Anaerobic Heart Rate Lower Limit", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.dst_offset": {
+  "uuid": 10765, 
+  "value": [
+   {
+    "name": "DST Offset", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.maximum_recommended_heart_rate": {
+  "uuid": 10897, 
+  "value": [
+   {
+    "name": "Maximum Recommended Heart Rate", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.object_size": {
+  "uuid": 10944, 
+  "value": [
+   {
+    "name": "Current Size", 
+    "format": "uint32"
+   }, 
+   {
+    "name": "Allocated Size", 
+    "format": "uint32"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.cgm_feature": {
+  "uuid": 10920, 
+  "value": [
+   {
+    "name": "CGM Feature", 
+    "format": "24bit"
+   }, 
+   {
+    "name": "CGM Type", 
+    "format": "4bit"
+   }, 
+   {
+    "name": "CGM Sample Location", 
+    "format": "4bit"
+   }, 
+   {
+    "name": "E2E-CRC", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.heart_rate_measurement": {
+  "uuid": 10807, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Heart Rate Measurement Value (uint8)", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Heart Rate Measurement Value (uint16)", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Expended", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "RR-Interval", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.supported_new_alert_category": {
+  "uuid": 10823, 
+  "value": [
+   {
+    "name": "Category ID Bit Mask", 
+    "format": "org.bluetooth.characteristic.alert_category_id_bit_mask"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.date_of_threshold_assessment": {
+  "uuid": 10886, 
+  "value": [
+   {
+    "name": "Year", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Month", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Day", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.supported_heart_rate_range": {
+  "uuid": 10967, 
+  "value": [
+   {
+    "name": "Minimum Heart Rate", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Maximum Heart Rate", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Minimum Increment", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.fitness_machine_status": {
+  "uuid": 10970, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.object_list_control_point": {
+  "uuid": 10950, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.cycling_power_control_point": {
+  "uuid": 10854, 
+  "value": [
+   {
+    "name": "Op Codes", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Parameter Value", 
+    "format": "variable"
+   }, 
+   {
+    "name": "Request Op Code", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Response Value", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Response Parameter", 
+    "format": "variable"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.boot_keyboard_input_report": {
+  "uuid": 10786, 
+  "value": [
+   {
+    "name": "Boot Keyboard Input Report Value", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.object_type": {
+  "uuid": 10943, 
+  "value": [
+   {
+    "name": "Object Type", 
+    "format": "gatt_uuid"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.elevation": {
+  "uuid": 10860, 
+  "value": [
+   {
+    "name": "Elevation", 
+    "format": "sint24"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.idd_features": {
+  "uuid": 11043, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.longitude": {
+  "uuid": 10927, 
+  "value": [
+   {
+    "name": "Longitude", 
+    "format": "sint32"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.intermediate_temperature": {
+  "uuid": 10782, 
+  "value": [
+   {
+    "name": "Intermediate Temperature", 
+    "format": "org.bluetooth.characteristic.temperature_measurement"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.alert_notification_control_point": {
+  "uuid": 10820, 
+  "value": [
+   {
+    "name": "Command ID", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Category ID", 
+    "format": "org.bluetooth.characteristic.alert_category_id"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.sc_control_point": {
+  "uuid": 10837, 
+  "value": [
+   {
+    "name": "Op Code", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Cumulative Value", 
+    "format": "variable"
+   }, 
+   {
+    "name": "Sensor Location Value", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Request Op Code", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Response Value", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Response Parameter", 
+    "format": "variable"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.aerobic_heart_rate_upper_limit": {
+  "uuid": 10884, 
+  "value": [
+   {
+    "name": "Aerobic Heart Rate Upper Limit", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.supported_unread_alert_category": {
+  "uuid": 10824, 
+  "value": [
+   {
+    "name": "Category ID Bit Mask", 
+    "format": "org.bluetooth.characteristic.alert_category_id_bit_mask"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.firmware_revision_string": {
+  "uuid": 10790, 
+  "value": [
+   {
+    "name": "Firmware Revision", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.cgm_session_run_time": {
+  "uuid": 10923, 
+  "value": [
+   {
+    "name": "CGM Session Run Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "E2E-CRC", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.body_composition_measurement": {
+  "uuid": 10908, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Body Fat Percentage", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Time Stamp", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }, 
+   {
+    "name": "User ID", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Basal Metabolism", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Muscle Percentage", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Muscle Mass - Kilograms", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Muscle Mass - Pounds", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Fat Free Mass - Kilograms", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Fat Free Mass - Pounds", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Soft Lean Mass - Kilograms", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Soft Lean Mass - Pounds", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Body Water Mass - Kilograms", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Body Water Mass - Pounds", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Impedance", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Weight - Kilograms", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Weight - Pounds", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Height - Meters", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Height - Inches", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.glucose_feature": {
+  "uuid": 10833, 
+  "value": [
+   {
+    "name": "Glucose Feature", 
+    "format": "16bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.plx_features": {
+  "uuid": 10848, 
+  "value": [
+   {
+    "name": "Supported Features", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Measurement Status Support", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Device and Sensor Status Support", 
+    "format": "24bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.idd_status_reader_control_point": {
+  "uuid": 11044, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.mesh_provisioning_data_out": {
+  "uuid": 10972, 
+  "value": [
+   {
+    "name": "Provisioning PDU", 
+    "format": "struct"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.step_climber_data": {
+  "uuid": 10959, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Floors", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Step Count", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Step Per Minute", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Average Step Rate", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Positive Elevation Gain", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Total Energy", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Hour", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Minute", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Heart Rate", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Metabolic Equivalent", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Elapsed Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Remaining Time", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.tds_control_point": {
+  "uuid": 10940, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.language": {
+  "uuid": 10914, 
+  "value": [
+   {
+    "name": "Language", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.ln_control_point": {
+  "uuid": 10859, 
+  "value": [
+   {
+    "name": "Op Codes", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Parameter Value", 
+    "format": "variable"
+   }, 
+   {
+    "name": "Request Op Code", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Response Value", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Response Parameter", 
+    "format": "variable"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.gatt.service_changed": {
+  "uuid": 10757, 
+  "value": [
+   {
+    "name": "Start of Affected Attribute Handle Range", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "End of Affected Attribute Handle Range", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.object_properties": {
+  "uuid": 10948, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.http_entity_body": {
+  "uuid": 10937, 
+  "value": [
+   {
+    "name": "HTTP Entity Body", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.object_last_modified": {
+  "uuid": 10946, 
+  "value": [
+   {
+    "name": "Object Last-Modified", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.aerobic_heart_rate_lower_limit": {
+  "uuid": 10878, 
+  "value": [
+   {
+    "name": "Aerobic Heart Rate Lower Limit", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.date_time": {
+  "uuid": 10760, 
+  "value": [
+   {
+    "name": "Year", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Month", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Day", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Hours", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Minutes", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Seconds", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.analog": {
+  "uuid": 10840, 
+  "value": [
+   {
+    "name": "Analog", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.ots_feature": {
+  "uuid": 10941, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.gender": {
+  "uuid": 10892, 
+  "value": [
+   {
+    "name": "Gender", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.fitness_machine_control_point": {
+  "uuid": 10969, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.intermediate_cuff_pressure": {
+  "uuid": 10806, 
+  "value": [
+   {
+    "name": "Intermediate Cuff Pressure", 
+    "format": "org.bluetooth.characteristic.blood_pressure_measurement"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.report": {
+  "uuid": 10829, 
+  "value": [
+   {
+    "name": "Report Value", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.glucose_measurement": {
+  "uuid": 10776, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Sequence Number", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Base Time", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }, 
+   {
+    "name": "Time Offset", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Glucose Concentration - units of kg/L", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Glucose Concentration - units of mol/L", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Type", 
+    "format": "nibble"
+   }, 
+   {
+    "name": "Sample Location", 
+    "format": "nibble"
+   }, 
+   {
+    "name": "Sensor Status Annunciation", 
+    "format": "16bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.fat_burn_heart_rate_upper_limit": {
+  "uuid": 10889, 
+  "value": [
+   {
+    "name": "Fat Burn Heart Rate Upper Limit", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.day_date_time": {
+  "uuid": 10762, 
+  "value": [
+   {
+    "name": "Date Time", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }, 
+   {
+    "name": "Day of Week", 
+    "format": "org.bluetooth.characteristic.day_of_week"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.temperature_type": {
+  "uuid": 10781, 
+  "value": [
+   {
+    "name": "Temperature Text Description", 
+    "format": "8bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.supported_speed_range": {
+  "uuid": 10964, 
+  "value": [
+   {
+    "name": "Minimum Speed", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Maximum Speed", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Minimum Increment", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.vo2_max": {
+  "uuid": 10902, 
+  "value": [
+   {
+    "name": "VO2 Max", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.object_id": {
+  "uuid": 10947, 
+  "value": [
+   {
+    "name": "Object ID", 
+    "format": "uint48"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.apparent_wind_direction": {
+  "uuid": 10867, 
+  "value": [
+   {
+    "name": "Apparent Wind Direction", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.alert_category_id_bit_mask": {
+  "uuid": 10818, 
+  "value": [
+   {
+    "name": "Category ID Bit Mask 0", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Category ID Bit Mask 1", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.blood_pressure_measurement": {
+  "uuid": 10805, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Blood Pressure Measurement Compound Value - Systolic (mmHg)", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Blood Pressure Measurement Compound Value - Diastolic (mmHg)", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Blood Pressure Measurement Compound Value - Mean Arterial Pressure (mmHg)", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Blood Pressure Measurement Compound Value - Systolic (kPa)", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Blood Pressure Measurement Compound Value - Diastolic (kPa)", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Blood Pressure Measurement Compound Value - Mean Arterial Pressure (kPa)", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Time Stamp", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }, 
+   {
+    "name": "Pulse Rate", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "User ID", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Measurement Status", 
+    "format": "16bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.protocol_mode": {
+  "uuid": 10830, 
+  "value": [
+   {
+    "name": "Protocol Mode Value", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.cgm_specific_ops_control_point": {
+  "uuid": 10924, 
+  "value": [
+   {
+    "name": "Op Code", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Op Code - Response Codes", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Operand", 
+    "format": "variable"
+   }, 
+   {
+    "name": "E2E-CRC", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Calibration Value - Glucose Concentration of Calibration", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Calibration Value - Calibration Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Calibration Value - Calibration Type", 
+    "format": "4bit"
+   }, 
+   {
+    "name": "Calibration Value - Calibration Sample Location", 
+    "format": "4bit"
+   }, 
+   {
+    "name": "Calibration Value - Next Calibration Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Calibration Value - Calibration Data Record Number", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Calibration Value - Calibration Status", 
+    "format": "8bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.bond_management_feature": {
+  "uuid": 10917, 
+  "value": [
+   {
+    "name": "Bond Management Features", 
+    "format": "24bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.weight_measurement": {
+  "uuid": 10909, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Weight - SI ", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Weight - Imperial ", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Time Stamp", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }, 
+   {
+    "name": "User ID", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "BMI", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Height - SI", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Height - Imperial", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.blood_pressure_feature": {
+  "uuid": 10825, 
+  "value": [
+   {
+    "name": "Blood Pressure Feature", 
+    "format": "16bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.software_revision_string": {
+  "uuid": 10792, 
+  "value": [
+   {
+    "name": "Software Revision", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.glucose_measurement_context": {
+  "uuid": 10804, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Sequence Number", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Extended Flags ", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Carbohydrate ID", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Carbohydrate - units of kilograms", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Meal", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Tester", 
+    "format": "nibble"
+   }, 
+   {
+    "name": "Health", 
+    "format": "nibble"
+   }, 
+   {
+    "name": "Exercise Duration", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Exercise Intensity", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Medication ID", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Medication - units of kilograms", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Medication - units of liters", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "HbA1c", 
+    "format": "SFLOAT"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.digital": {
+  "uuid": 10838, 
+  "value": [
+   {
+    "name": "Digital", 
+    "format": "2bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.local_north_coordinate": {
+  "uuid": 10928, 
+  "value": [
+   {
+    "name": "Local North Coordinate", 
+    "format": "sint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.gap.device_name": {
+  "uuid": 10752, 
+  "value": [
+   {
+    "name": "Name", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.weight": {
+  "uuid": 10904, 
+  "value": [
+   {
+    "name": "Weight", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.idd_command_control_point": {
+  "uuid": 11045, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.heart_rate_control_point": {
+  "uuid": 10809, 
+  "value": [
+   {
+    "name": "Heart Rate Control Point", 
+    "format": "8bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.training_status": {
+  "uuid": 10963, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.floor_number": {
+  "uuid": 10930, 
+  "value": [
+   {
+    "name": "Floor Number", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.new_alert": {
+  "uuid": 10822, 
+  "value": [
+   {
+    "name": "Category ID", 
+    "format": "org.bluetooth.characteristic.alert_category_id"
+   }, 
+   {
+    "name": "Number of New Alert", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Text String Information", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.dew_point": {
+  "uuid": 10875, 
+  "value": [
+   {
+    "name": "Dew Point", 
+    "format": "sint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.gap.reconnection_address": {
+  "uuid": 10755, 
+  "value": [
+   {
+    "name": "Address", 
+    "format": "uint48"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.mesh_proxy_data_in": {
+  "uuid": 10973, 
+  "value": [
+   {
+    "name": "Proxy PDU", 
+    "format": "struct"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.aggregate": {
+  "uuid": 10842, 
+  "value": [
+   {
+    "name": "Input Bits", 
+    "format": "org.bluetooth.characteristic.digital"
+   }, 
+   {
+    "name": "Analog Input", 
+    "format": "org.bluetooth.characteristic.analog"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.last_name": {
+  "uuid": 10896, 
+  "value": [
+   {
+    "name": "Last Name", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.idd_status_changed": {
+  "uuid": 11040, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.reference_time_information": {
+  "uuid": 10772, 
+  "value": [
+   {
+    "name": "Source", 
+    "format": "org.bluetooth.characteristic.time_source"
+   }, 
+   {
+    "name": "Accuracy", 
+    "format": "org.bluetooth.characteristic.time_accuracy"
+   }, 
+   {
+    "name": "Days Since Update", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Hours Since Update", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.cgm_session_start_time": {
+  "uuid": 10922, 
+  "value": [
+   {
+    "name": "Session Start Time", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }, 
+   {
+    "name": "Time Zone", 
+    "format": "org.bluetooth.characteristic.time_zone"
+   }, 
+   {
+    "name": "DST-Offset", 
+    "format": "org.bluetooth.characteristic.dst_offset"
+   }, 
+   {
+    "name": "E2E-CRC", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.position_quality": {
+  "uuid": 10857, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Number of Beacons in Solution", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Number of Beacons in View", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Time to First Fix", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "EHPE", 
+    "format": "uint32"
+   }, 
+   {
+    "name": "EVPE", 
+    "format": "uint32"
+   }, 
+   {
+    "name": "HDOP", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "VDOP", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.email_address": {
+  "uuid": 10887, 
+  "value": [
+   {
+    "name": "Email Address", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.day_of_week": {
+  "uuid": 10761, 
+  "value": [
+   {
+    "name": "Day of Week", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.date_of_birth": {
+  "uuid": 10885, 
+  "value": [
+   {
+    "name": "Year", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Month", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Day", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.rc_settings": {
+  "uuid": 11038, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.humidity": {
+  "uuid": 10863, 
+  "value": [
+   {
+    "name": "Humidity", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.boot_keyboard_output_report": {
+  "uuid": 10802, 
+  "value": [
+   {
+    "name": "Boot Keyboard Output Report Value", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.object_name": {
+  "uuid": 10942, 
+  "value": [
+   {
+    "name": "Object Name", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.object_first_created": {
+  "uuid": 10945, 
+  "value": [
+   {
+    "name": "Object First-Created", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.supported_power_range": {
+  "uuid": 10968, 
+  "value": [
+   {
+    "name": "Minimum Power", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Maximum Power", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Minimum Increment", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.supported_resistance_level_range": {
+  "uuid": 10966, 
+  "value": [
+   {
+    "name": "Minimum Resistance Level", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Maximum Resistance Level", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Minimum Increment", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.stair_climber_data": {
+  "uuid": 10960, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Floors", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Step Per Minute", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Average Step Rate", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Positive Elevation Gain", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Stride Count", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Total Energy", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Hour", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Minute", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Heart Rate", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Metabolic Equivalent", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Elapsed Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Remaining Time", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.ringer_control_point": {
+  "uuid": 10816, 
+  "value": [
+   {
+    "name": "Ringer Control Point", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.pressure": {
+  "uuid": 10861, 
+  "value": [
+   {
+    "name": "Pressure", 
+    "format": "uint32"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.hid_information": {
+  "uuid": 10826, 
+  "value": [
+   {
+    "name": "bcdHID", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "bCountryCode", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.rc_feature": {
+  "uuid": 11037, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.unread_alert_status": {
+  "uuid": 10821, 
+  "value": [
+   {
+    "name": "Category ID", 
+    "format": "org.bluetooth.characteristic.alert_category_id"
+   }, 
+   {
+    "name": "Unread count", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.user_control_point": {
+  "uuid": 10911, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.location_and_speed": {
+  "uuid": 10855, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Instantaneous Speed", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Total Distance", 
+    "format": "uint24"
+   }, 
+   {
+    "name": "Location - Latitude", 
+    "format": "sint32"
+   }, 
+   {
+    "name": "Location - Longitude", 
+    "format": "sint32"
+   }, 
+   {
+    "name": "Elevation", 
+    "format": "sint24"
+   }, 
+   {
+    "name": "Heading", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Rolling Time", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "UTC Time", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.object_changed": {
+  "uuid": 10952, 
+  "value": []
+ }, 
+ "org.bluetooth.characteristic.gap.peripheral_privacy_flag": {
+  "uuid": 10754, 
+  "value": [
+   {
+    "name": "Flag", 
+    "format": "boolean"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.time_update_control_point": {
+  "uuid": 10774, 
+  "value": [
+   {
+    "name": "Time Update Control Point", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.record_access_control_point": {
+  "uuid": 10834, 
+  "value": [
+   {
+    "name": "Op Code", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Operator", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Operand", 
+    "format": "variable"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.cgm_measurement": {
+  "uuid": 10919, 
+  "value": [
+   {
+    "name": "Size", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "CGM Glucose Concentration", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "Time Offset", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Sensor Status Annunciation", 
+    "format": "variable"
+   }, 
+   {
+    "name": "CGM Trend Information", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "CGM Quality", 
+    "format": "SFLOAT"
+   }, 
+   {
+    "name": "E2E-CRC", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.indoor_positioning_configuration": {
+  "uuid": 10925, 
+  "value": [
+   {
+    "name": "Indoor Positioning Configuration", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.model_number_string": {
+  "uuid": 10788, 
+  "value": [
+   {
+    "name": "Model Number", 
+    "format": "utf8s"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.navigation": {
+  "uuid": 10856, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Bearing", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Heading", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Remaining Distance", 
+    "format": "uint24"
+   }, 
+   {
+    "name": "Remaining Vertical Distance", 
+    "format": "sint24"
+   }, 
+   {
+    "name": "Estimated Time of Arrival", 
+    "format": "org.bluetooth.characteristic.date_time"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.cycling_power_measurement": {
+  "uuid": 10851, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Instantaneous Power", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Pedal Power Balance", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Accumulated Torque", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Wheel Revolution Data - Cumulative Wheel Revolutions", 
+    "format": "uint32"
+   }, 
+   {
+    "name": "Wheel Revolution Data - Last Wheel Event Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Crank Revolution Data- Cumulative Crank Revolutions", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Crank Revolution Data- Last Crank Event Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Extreme Force Magnitudes - Maximum Force Magnitude", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Extreme Force Magnitudes - Minimum Force Magnitude", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Extreme Torque Magnitudes- Maximum Torque Magnitude", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Extreme Torque Magnitudes- Minimum Torque Magnitude", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Extreme Angles - Maximum Angle", 
+    "format": "uint12"
+   }, 
+   {
+    "name": "Extreme Angles - Minimum Angle", 
+    "format": "uint12"
+   }, 
+   {
+    "name": "Top Dead Spot Angle", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Bottom Dead Spot Angle", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Accumulated Energy", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.database_change_increment": {
+  "uuid": 10905, 
+  "value": [
+   {
+    "name": "Database Change Increment", 
+    "format": "uint32"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.rsc_measurement": {
+  "uuid": 10835, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "8bit"
+   }, 
+   {
+    "name": "Instantaneous Speed", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Instantaneous Cadence", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Instantaneous Stride Length", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Total Distance", 
+    "format": "uint32"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.sensor_location": {
+  "uuid": 10845, 
+  "value": [
+   {
+    "name": "Sensor Location", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.body_composition_feature": {
+  "uuid": 10907, 
+  "value": [
+   {
+    "name": "Body Composition Feature", 
+    "format": "32bit"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.ieee_11073-20601_regulatory_certification_data_list": {
+  "uuid": 10794, 
+  "value": [
+   {
+    "name": "Data", 
+    "format": "reg-cert-data-list"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.wind_chill": {
+  "uuid": 10873, 
+  "value": [
+   {
+    "name": "Wind Chill", 
+    "format": "sint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.rower_data": {
+  "uuid": 10961, 
+  "value": [
+   {
+    "name": "Flags", 
+    "format": "16bit"
+   }, 
+   {
+    "name": "Stroke Rate", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Stroke Count", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Average Stroke Rate", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Total Distance", 
+    "format": "uint24"
+   }, 
+   {
+    "name": "Instantaneous Pace", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Average Pace", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Instantaneous Power", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Average Power", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Resistance Level", 
+    "format": "sint16"
+   }, 
+   {
+    "name": "Total Energy", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Hour", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Energy Per Minute", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Heart Rate", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Metabolic Equivalent", 
+    "format": "uint8"
+   }, 
+   {
+    "name": "Elapsed Time", 
+    "format": "uint16"
+   }, 
+   {
+    "name": "Remaining Time", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.height": {
+  "uuid": 10894, 
+  "value": [
+   {
+    "name": "Height", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.waist_circumference": {
+  "uuid": 10903, 
+  "value": [
+   {
+    "name": "Waist Circumference", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.fat_burn_heart_rate_lower_limit": {
+  "uuid": 10888, 
+  "value": [
+   {
+    "name": "Fat Burn Heart Rate Lower Limit", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.uncertainty": {
+  "uuid": 10932, 
+  "value": [
+   {
+    "name": "Uncertainty", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.http_control_point": {
+  "uuid": 10938, 
+  "value": [
+   {
+    "name": "Op Code", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.irradiance": {
+  "uuid": 10871, 
+  "value": [
+   {
+    "name": "Irradiance", 
+    "format": "uint16"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.sport_type_for_aerobic_and_anaerobic_thresholds": {
+  "uuid": 10899, 
+  "value": [
+   {
+    "name": "Sport Type for Aerobic and Anaerobic Thresholds", 
+    "format": "uint8"
+   }
+  ]
+ }, 
+ "org.bluetooth.characteristic.local_east_coordinate": {
+  "uuid": 10929, 
+  "value": [
+   {
+    "name": "Local East Coordinate", 
+    "format": "sint16"
+   }
+  ]
+ },
+ "org.bluetooth.characteristic.constant_tone_extension_enable": {
+  "uuid": 11181, 
+  "value": [
+   {
+    "name": "Constant Tone Extension Enable", 
+    "format": "uint8"
+   }
+  ]
+ }
+}

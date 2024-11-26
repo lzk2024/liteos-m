@@ -1,0 +1,18 @@
+[
+    {
+        "caption": "ING918xx: CoreMark 1.0 Test Binary",
+        "ini": "coremark_918.ini"
+    },
+    {
+        "caption": "ING918xx: BQB RF Test Binary",
+        "ini": "bqb_rf_918.ini"
+    },
+    {
+        "caption": "-",
+        "ini": "-"
+    },
+    {
+        "caption": "ING916xx: CoreMark 1.0 Test Binary",
+        "ini": "coremark_916.ini"
+    }
+]

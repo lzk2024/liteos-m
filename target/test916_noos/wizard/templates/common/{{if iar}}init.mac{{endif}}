@@ -1,0 +1,5 @@
+execUserSetup()
+{
+    #MSP = *(unsigned int *)({{bundle_meta.rom.base}});
+    #PC = *(unsigned int *)({{bundle_meta.rom.base}} + 4);
+}

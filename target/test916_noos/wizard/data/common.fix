@@ -1,0 +1,4 @@
+echo|fixing {{proj_dir}}/flash_download.ini
+change_ini|{{proj_dir}}/flash_download.ini|bin-0|FileName|{{sdk_release_path}}/bundles/{{bundle}}/{{series}}/platform.bin
+change_ini|{{proj_dir}}/flash_download.ini|bin-0|Address|{{bundle_meta.rom.base}}
+change_ini|{{proj_dir}}/flash_download.ini|bin-1|Address|{{app_rom_addr}}

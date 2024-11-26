@@ -1,0 +1,117 @@
+{{if family eq ing918}}{{startpart target_name}}ING918xx{{endpart}}{{startpart core_id}}Cortex-M3{{endpart}}{{endif}}
+{{if family eq ing916}}{{startpart target_name}}ING916xx{{endpart}}{{startpart core_id}}Cortex-M4{{endpart}}{{endif}}
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="{{proj_name}}" target="8" version="2">
+  <project Name="{{proj_name}}">
+    <configuration
+      Name="Common"
+
+      {{if family eq ing918}}
+      arm_architecture="v7M"
+      arm_core_type="Cortex-M3"
+      arm_target_device_name="ING9188xx"
+      external_build_file_name="{{sdk_release_path}}/../flash/ROWFlash/ING9188xx.elf"
+      {{endif}}
+      {{if family eq ing916}}
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_target_device_name="ING9168xx"
+      external_build_file_name="{{sdk_release_path}}/../flash/ROWFlash/ING9168xx.elf"
+      {{endif}}
+
+      arm_endian="Little"
+      arm_fp_abi="Soft"
+      arm_fpu_type="None"
+      arm_linker_heap_size="{{heap_size}}"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="{{if noos}}1024{{else}}4{{endif}}"
+      arm_linker_variant="GNU"
+      arm_simulator_memory_simulation_parameter="RWX 10000000,00200000,CDCDCDCD"
+
+      arm_target_interface_type="SWD"
+      asm_additional_options=""
+      c_only_additional_options=""
+      c_preprocessor_definitions="USE_STDPERIPH_DRIVER"
+      c_user_include_directories="{{sdk_release_path}}/bundles/{{bundle}}/inc;{{sdk_release_path}}/bundles/{{bundle}}/inc/os;{{sdk_release_path}}/src/BSP;{{sdk_release_path}}/src/FWlib;{{sdk_release_path}}/src/StartUP/{{family}};{{sdk_release_path}}/src/Tools;{{sdk_release_path}}/src{{if bundle eq mesh}};{{sdk_release_path}}/src/Mesh{{endif}};{{cmsis}}/Include"
+      debug_target_connection="J-Link"
+
+      external_load_address="0x20000000"
+      linker_additional_options="--just-symbols={{sdk_release_path}}/bundles/{{bundle}}/{{series}}/symdefs.g"
+      linker_output_format="bin"
+      linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml"
+      linker_section_placements_segments="FLASH RX {{app_rom_addr}} {{app_rom_size}};RAM RWX {{app_ram_addr}} {{app_ram_size}}"
+      project_directory=""
+      project_type="Executable" />
+    <folder Name="App">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+      <file file_name="./src/main.c" />
+{{if role neq blank}}
+      <file file_name="./src/profile.c" />
+{{endif}}
+{{if ota}}
+      <file file_name="./src/ota_service.c" />
+{{endif}}
+    </folder>
+    <folder Name="StartUP">
+      <file file_name="./src/cwstartup_{{family}}00.s" />
+    </folder>
+    <folder Name="BSP" />
+      <file file_name="{{sdk_release_path}}/src/BSP/eflash.c" />
+    <folder Name="FWLib">
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_adc.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_gpio.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_i2c.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_pinctrl.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_pwm.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_rtc.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_ssp.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_sysctrl.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_timer.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_uart.c" />
+      {{if family eq ing916}}
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_comparator.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_dma.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_efuse.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_i2s.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_ir.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_keyscan.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_pdm.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_pte.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_qdec.c" />
+      <file file_name="{{sdk_release_path}}/src/FWlib/peripheral_usb.c" />
+      {{endif}}
+    </folder>
+    <folder Name="Tools">
+{{if role eq central}}
+      <file file_name="{{sdk_release_path}}/src/Tools/ad_parser.c" />
+{{endif}}
+{{if coding_profile}}
+      <file file_name="{{sdk_release_path}}/src/Tools/att_db_util.c" />
+{{endif}}
+{{if heap_override}}
+      <file file_name="{{sdk_release_path}}/src/Tools/malloc_override.c" />
+{{endif}}
+{{if trace_enable or use_segger_rtt}}
+      <file file_name="{{sdk_release_path}}/src/Tools/trace.c" />
+{{endif}}
+    </folder>
+{{if bundle eq mesh}}
+    <folder Name="Mesh">
+      <file file_name="{{sdk_release_path}}/src/Mesh/model_srv.c" />
+      <file file_name="{{sdk_release_path}}/src/Mesh/model_cli.c" />
+    </folder>
+{{endif}}
+    <folder Name="RTT Files" />
+  </project>
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_optimization_level="None" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 1" />
+</solution>

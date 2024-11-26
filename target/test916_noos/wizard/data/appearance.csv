@@ -1,0 +1,86 @@
+0,Unknown,0,Unknown
+,,1-63,Reserved
+1,Phone,0,Generic Phone
+,,1-63,Reserved
+2,Computer,0,Generic Computer
+,,1-63,Reserved
+3,Watch,0,Generic Watch
+,,1,Watch: Sports Watch
+,,2-63,Reserved
+4,Clock,0,Generic Clock
+,,1-63,Reserved
+5,Display,0,Generic Display
+,,1-63,Reserved
+6,Remote Control,0,Generic Remote Control
+,,1-63,Reserved
+7,Eye-glasses,0,Generic Eye-glasses
+,,1-63,Reserved
+8,Tag,0,Generic Tag
+,,1-63,Reserved
+9,Keyring,0,Generic Keyring
+,,1-63,Reserved
+10,Media Player,0,Generic Media Player
+,,1-63,Reserved
+11,Barcode Scanner,0,Generic Barcode Scanner
+,,1-63,Reserved
+12,Thermometer,0,Generic Thermometer
+,,1,Thermometer: Ear
+,,2-63,Reserved
+13,Heart rate Sensor,0,Generic Heart rate Sensor
+,,1,Heart Rate Sensor: Heart Rate Belt
+,,2-63,Reserved
+14,Blood Pressure,0,Generic Blood Pressure
+,,1,Blood Pressure: Arm
+,,2,Blood Pressure: Wrist
+,,3-63,Reserved
+15,Human Interface Device (HID),0,Human Interface Device (HID)
+,,1,Keyboard
+,,2,Mouse
+,,3,Joystick
+,,4,Gamepad
+,,5,Digitizer Tablet
+,,6,Card Reader
+,,7,Digital Pen
+,,8,Barcode Scanner
+,,9-63,Reserved
+16,Glucose Meter,0,Generic Glucose Meter
+,,1-63,Reserved
+17,Running Walking Sensor,0,Generic: Running Walking Sensor
+,,1,Running Walking Sensor: In-Shoe
+,,2,Running Walking Sensor: On-Shoe
+,,3,Running Walking Sensor: On-Hip
+,,4-63,Reserved
+18,Cycling,0,Generic: Cycling
+,,1,Cycling: Cycling Computer
+,,2,Cycling: Speed Sensor
+,,3,Cycling: Cadence Sensor
+,,4,Cycling: Power Sensor
+,,5,Cycling: Speed and Cadence Sensor
+,,6-63,Reserved
+19-48,Reserved,,
+49,Pulse Oximeter,0,Generic: Pulse Oximeter
+,,1,Fingertip
+,,2,Wrist Worn
+,,3-63,Reserved
+50,Weight Scale,0,Generic: Weight Scale
+,,1-63,Reserved
+51,Personal Mobility Device,0,Generic Personal Mobility Device
+,,1,Powered Wheelchair
+,,2,Mobility Scooter
+,,3-63,Reserved
+52,Continuous Glucose Monitor,0,Generic Continuous Glucose Monitor
+,,1-63,Reserved
+53,Insulin Pump,0,Generic Insulin Pump
+,,1,"Insulin Pump, durable pump"
+,,4,"Insulin Pump, patch pump"
+,,8,Insulin Pen
+,,9-63,Reserved
+54,Medication Delivery,0,Generic Medication Delivery
+,,1-63,Reserved
+55-80,Reserved,,
+81,Outdoor Sports Activity,0,Generic: Outdoor Sports Activity
+,,1,Location Display Device
+,,2,Location and Navigation Display Device
+,,3,Location Pod
+,,4,Location and Navigation Pod
+,,5-63,Reserved

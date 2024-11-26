@@ -1,0 +1,3 @@
+msp = *(unsigned int *)({{bundle_meta.rom.base}})
+pc = *(unsigned int *)({{bundle_meta.rom.base}} + 4)
+

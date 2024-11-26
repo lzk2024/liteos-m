@@ -1,0 +1,137 @@
+This software uses following third-party libraries & resources:
+
+* CMSIS
+
+  See $(SDK_DIR)/wizard/CMSIS/CMSIS_END_USER_LICENCE_AGREEMENT.pdf.
+
+* Super Object Toolkit
+
+  Usage allowed under the restrictions of the Lesser GNU General Public License
+  or alternatively the restrictions of the Mozilla Public License 1.1
+  
+  Software distributed under the License is distributed on an "AS IS" basis,
+  WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+  the specific language governing rights and limitations under the License.
+  
+  Embarcadero Technologies Inc is not permitted to use or redistribute
+  this source code without explicit permission.
+  
+  Unit owner : Henri Gourvest <hgourvest@gmail.com>
+  Web site   : http://www.progdigy.com
+
+* SEGGER RTT - Real Time Transfer for embedded targets
+
+  All rights reserved.
+
+  SEGGER strongly recommends to not make any changes
+  to or modify the source code of this software in order to stay
+  compatible with the RTT protocol and J-Link.
+
+  Redistribution and use in source and binary forms, with or
+  without modification, are permitted provided that the following
+  condition is met:
+
+  o Redistributions of source code must retain the above copyright
+    notice, this condition and the following disclaimer.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+  CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  DISCLAIMED. IN NO EVENT SHALL SEGGER Microcontroller BE LIABLE FOR
+  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+  OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+  DAMAGE.
+
+  (c) 2014 - 2016  SEGGER Microcontroller GmbH
+  www.segger.com
+
+*  mscgen-inpage.js
+
+  Copyright (C) 2013 - 2016 Sander Verweij
+
+  mscgen_js is licensed under the GNU General Public License version 3 ("the GPL").
+
+  For using mscgenjs-inpage (in this package: dist/mscgen-inpage.js) a special
+  exception to the GPL is made. This is so you can use it to render sequence charts
+  in documentation which has a different license from the GPL without that documention
+  (let alone the software it documents, if any) having to be licensed under the GPL.
+  
+  > As a special exception to the GPL, any HTML file which merely makes function
+  > calls to mscgen-inpage.js, and for that purpose includes it by reference shall
+  > be deemed a separate work for copyright law purposes. In addition, the copyright
+  > holders of this code give you permission to combine this code with free software
+  > libraries that are released under the GNU LGPL. You may copy and distribute such
+  > a system following the terms of the GNU GPL for this code and the LGPL for the
+  > libraries. If you modify this code, you may extend this exception to your version
+  > of the code, but you are not obligated to do so. If you do not wish to do so,
+  > delete this exception statement from your version.
+
+* SimpleTpl - simple template engine
+
+  Copyright (C) 2014 Michał Gawrycki info..gmsystems.pl
+
+  This library is free software; you can redistribute it and/or modify it
+  under the terms of the GNU Library General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or (at your
+  option) any later version with the following modification:
+
+  As a special exception, the copyright holders of this library give you
+  permission to link this library with independent modules to produce an
+  executable, regardless of the license terms of these independent modules,and
+  to copy and distribute the resulting executable under terms of your choice,
+  provided that you also meet, for each linked independent module, the terms
+  and conditions of the license of that module. An independent module is a
+  module which is not derived from or based on this library. If you modify
+  this library, you may extend this exception to your version of the library,
+  but you are not obligated to do so. If you do not wish to do so, delete this
+  exception statement from your version.
+
+  This program is distributed in the hope that it will be useful, but WITHOUT
+  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+  FITNESS FOR A PARTICULAR PURPOSE. See the GNU Library General Public License
+  for more details.
+
+  You should have received a copy of the GNU Library General Public License
+  along with this library; if not, write to the Free Software Foundation,
+  Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+* GNU make (binary distribution)
+
+  Copyright (C) 1988-2012 Free Software Foundation, Inc.
+  License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+  This is free software: you are free to change and redistribute it.
+  There is NO WARRANTY, to the extent permitted by law.
+
+* Icons made by Good Ware, Freepik, Prosymbols, Smashicons and srip from www.flaticon.com
+  (Licensed by CC 3.0 BY)
+
+* micro-ecc: (https://github.com/kmackay/micro-ecc)
+
+  Copyright (c) 2014, Kenneth MacKay
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without modification,
+  are permitted provided that the following conditions are met:
+   * Redistributions of source code must retain the above copyright notice, this
+     list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above copyright notice,
+     this list of conditions and the following disclaimer in the documentation
+     and/or other materials provided with the distribution.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
